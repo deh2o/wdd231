@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-labelledby="title">
+  <title>WDD231 Logo</title>
+  <circle cx="50" cy="50" r="46" fill="#222"/>
+  <path d="M25 30h12l8 28 8-28h10l8 28 8-28h4L73 70H62l-9-28-9 28H33z" fill="#fff"/>
+</svg>
