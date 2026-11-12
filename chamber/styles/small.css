@@ -150,6 +150,12 @@ nav a.active {
     color: var(--white);
 }
 
+/* Reserve space while business records are loading */
+#members {
+    min-height: 1500px;
+    align-content: start;
+}
+
 /* Member cards */
 .members-grid,
 .members-list {
