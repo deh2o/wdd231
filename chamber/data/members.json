@@ -1,0 +1,82 @@
+
+{
+  "members": [
+    {
+      "name": "Ebonyi Digital Solutions",
+      "tagline": "Technology for Business Growth",
+      "address": "Waterworks Road, Abakaliki, Ebonyi State",
+      "phone": "+234 800 111 0001",
+      "email": "info@ebonydigital.com",
+      "website": "https://ebonydigital.com",
+      "image": "business-01.jpeg",
+      "membership": 3,
+      "description": "A technology company providing digital solutions, IT support and web development services."
+    },
+    {
+      "name": "Eastern Harvest Foods",
+      "tagline": "Fresh Produce, Quality Living",
+      "address": "Ogoja Road, Abakaliki, Ebonyi State",
+      "phone": "+234 800 111 0002",
+      "email": "hello@easternharvest.com",
+      "website": "https://easternharvest.com",
+      "image": "business-02.jpeg",
+      "membership": 2,
+      "description": "A food and agricultural business focused on quality farm produce and food distribution."
+    },
+    {
+      "name": "Crystal Homes and Properties",
+      "tagline": "Building Your Future",
+      "address": "Presco Junction, Abakaliki, Ebonyi State",
+      "phone": "+234 800 111 0003",
+      "email": "contact@crystalhomes.com",
+      "website": "https://crystalhomes.com",
+      "image": "business-03.jpeg",
+      "membership": 2,
+      "description": "A property business offering real estate, property management and consultancy services."
+    },
+    {
+      "name": "PrimeCare Medical Centre",
+      "tagline": "Your Health, Our Priority",
+      "address": "Kpirikpiri, Abakaliki, Ebonyi State",
+      "phone": "+234 800 111 0004",
+      "email": "care@primecare.com",
+      "website": "https://primecare.com",
+      "image": "business-04.jpeg",
+      "membership": 3,
+      "description": "A healthcare provider offering general medical consultations and basic diagnostic services."
+    },
+    {
+      "name": "Golden Grain Agro Services",
+      "tagline": "Growing Agriculture Together",
+      "address": "Afikpo Road, Abakaliki, Ebonyi State",
+      "phone": "+234 800 111 0005",
+      "email": "info@goldengrain.com",
+      "website": "https://goldengrain.com",
+      "image": "business-05.jpeg",
+      "membership": 1,
+      "description": "An agricultural services business supporting farmers with inputs and farm advisory services."
+    },
+    {
+      "name": "Royal Crest Hospitality",
+      "tagline": "Comfort and Excellent Service",
+      "address": "Mile 50, Abakaliki, Ebonyi State",
+      "phone": "+234 800 111 0006",
+      "email": "reservations@royalcrest.com",
+      "website": "https://royalcrest.com",
+      "image": "business-06.jpeg",
+      "membership": 2,
+      "description": "A hospitality business providing accommodation, catering and event services."
+    },
+    {
+      "name": "SmartEdge Business Consult",
+      "tagline": "Practical Solutions for Enterprises",
+      "address": "Abakaliki Township, Ebonyi State",
+      "phone": "+234 800 111 0007",
+      "email": "info@smartedge.com",
+      "website": "https://smartedge.com",
+      "image": "business-07.jpeg",
+      "membership": 1,
+      "description": "A business consultancy supporting small businesses with planning, training and administration."
+    }
+  ]
+}

@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="Explore the Abakaliki Chamber of Commerce business directory. Discover local businesses, services, and membership opportunities in Abakaliki, Ebonyi State."
+    />
+
+    <meta name="author" content="Agha Idam Walter" />
+
+    <title>Business Directory | Abakaliki Chamber of Commerce</title>
+
+    <!-- Open Graph / Facebook -->
+    <meta
+      property="og:title"
+      content="Abakaliki Chamber of Commerce | Business Directory"
+    />
+    <meta
+      property="og:description"
+      content="Discover businesses and services in Abakaliki, Ebonyi State, Nigeria."
+    />
+    <meta
+      property="og:image"
+      content="https://deh2o.github.io/wdd231/chamber/images/social-preview.webp"
+    />
+    <meta
+      property="og:url"
+      content="https://deh2o.github.io/wdd231/chamber/directory.html"
+    />
+    <meta property="og:type" content="website" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.png" type="image/png" />
+
+    <!-- Stylesheets: normalize first -->
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/small.css" />
+    <link rel="stylesheet" href="styles/larger.css" />
+
+    <!-- JavaScript -->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/directory.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <div class="header-content">
+        <a href="index.html" class="brand">
+          <span class="brand-mark" aria-hidden="true">A</span>
+          <span>
+            <strong>Abakaliki</strong>
+            <small>Chamber of Commerce</small>
+          </span>
+        </a>
+
+        <button
+          id="menu-button"
+          class="menu-button"
+          aria-label="Open navigation menu"
+          aria-expanded="false"
+          aria-controls="navigation"
+        >
+          ☰
+        </button>
+
+        <nav id="navigation" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="discover.html">Discover</a>
+          <a href="directory.html" class="active" aria-current="page"
+            >Directory</a
+          >
+          <a href="join.html">Join</a>
+          <a href="about.html">About</a>
+          <a href="podcast.html">Podcast</a>
+          <a href="events.html">Events</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="directory-main">
+      <div class="page-heading">
+        <h1>Business Directory</h1>
+        <p>Discover businesses and services in Abakaliki.</p>
+      </div>
+
+      <section
+        class="directory-controls"
+        aria-label="Directory display options"
+      >
+        <button id="grid-button" class="view-button active" aria-pressed="true">
+          Grid
+        </button>
+
+        <button id="list-button" class="view-button" aria-pressed="false">
+          List
+        </button>
+      </section>
+
+      <section id="members" class="members-grid" aria-label="Chamber members">
+        <p class="loading-message">Loading chamber members...</p>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-contact">
+          <h2>Abakaliki Chamber of Commerce</h2>
+          <p>Abakaliki, Ebonyi State, Nigeria</p>
+          <p>
+            Email:
+            <a href="mailto:info@abakalikichamber.org"
+              >info@abakalikichamber.org</a
+            >
+          </p>
+          <p>Phone: +234 800 000 0000</p>
+        </div>
+
+        <div class="social-links" aria-label="Social media links">
+          <a href="#" aria-label="YouTube">YouTube</a>
+          <a href="#" aria-label="X">X</a>
+          <a href="#" aria-label="LinkedIn">LinkedIn</a>
+        </div>
+
+        <div class="footer-development">
+          <p>WDD231 Class Project</p>
+          <p>Agha Idam Walter</p>
+          <p>
+            &copy; <span id="currentyear"></span> Abakaliki Chamber of Commerce
+          </p>
+          <p id="lastModified"></p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
