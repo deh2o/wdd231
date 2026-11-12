@@ -7,6 +7,8 @@
     --text-color: #202b36;
     --white: #ffffff;
     --border-color: #d8dee5;
+    --extra-color: #e8edf2;
+    --extra-color-2: #285d7e;
 }
 
 * {
@@ -101,7 +103,7 @@ nav a {
     padding: 0.75rem;
     color: var(--white);
     text-decoration: none;
-    border-top: 1px solid rgb(255 255 255 / 20%);
+    border-top: 1px solid var(--text-color);
 }
 
 nav a:hover,
@@ -176,13 +178,13 @@ nav a.active {
     background: var(--white);
     border: 1px solid var(--border-color);
     border-radius: 8px;
-    box-shadow: 0 2px 6px rgb(0 0 0 / 6%);
+    box-shadow: 0 2px 6px var(--text-colo r/ 6%);
 }
 
 .member-heading {
     padding: 0.65rem;
     text-align: center;
-    background: #e8edf2;
+    background: var(--extra-color);
     border-bottom: 1px solid var(--border-color);
 }
 
@@ -209,7 +211,7 @@ nav a.active {
     max-height: 180px;
     object-fit: cover;
     border-radius: 4px;
-    background: #e8edf2;
+    background: var(--extra-color);
 }
 
 .member-information p {
@@ -231,7 +233,7 @@ nav a.active {
 
 /* Footer */
 footer {
-    background: #e8edf2;
+    background: var(--extra-color);
     border-top: 3px solid var(--secondary-color);
 }
 
@@ -270,7 +272,7 @@ footer {
 }
 
 .social-links a:hover {
-    background: #285d7e;
+    background: var(--extra-color-2)
 }
 
 /* Keyboard accessibility */
