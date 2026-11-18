@@ -359,10 +359,6 @@ button:focus-visible {
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-.cta-button:hover {
-  transform: translateY(-2px);
-}
-
 /* =========================
    EVENTS
 ========================= */
@@ -419,7 +415,7 @@ button:focus-visible {
   margin: 0.5rem 0;
 }
 
-#weather-icon {
+#weather-icon-container img {
   display: block;
   width: 100px;
   height: 100px;
@@ -519,6 +515,7 @@ button:focus-visible {
 }
 
 .cta-button:hover {
+  transform: translateY(-2px);
   filter: brightness(1.05);
 }
 

@@ -1,8 +1,7 @@
 // Select homepage weather elements
 const currentTemp = document.querySelector("#current-temp");
 const weatherDescription = document.querySelector("#weather-description");
-const weatherIcon = document.querySelector("#weather-icon");
-const forecastContainer = document.querySelector("#forecast");
+const weatherIconContainer = document.querySelector("#weather-icon-container");const forecastContainer = document.querySelector("#forecast");
 
 // Abakaliki, Ebonyi State, Nigeria
 const latitude = 6.3249;
@@ -40,7 +39,7 @@ async function getCurrentWeather() {
 
 // Display current weather
 function displayCurrentWeather(data) {
-    if (!currentTemp || !weatherDescription || !weatherIcon) return;
+    if (!currentTemp || !weatherDescription || !weatherIconContainer) return;
 
     const temperature = Math.round(data.main.temp);
     const description = data.weather[0].description;
@@ -49,8 +48,15 @@ function displayCurrentWeather(data) {
     currentTemp.textContent = `${temperature}°C`;
     weatherDescription.textContent = description;
 
-    weatherIcon.src = `https://openweathermap.org/img/wn/${iconCode}@2x.png`;
-    weatherIcon.alt = description;
+    // Create the weather icon dynamically
+    const icon = document.createElement("img");
+
+    icon.src = `https://openweathermap.org/img/wn/${iconCode}@2x.png`;
+    icon.alt = description;
+    icon.width = 100;
+    icon.height = 100;
+
+    weatherIconContainer.replaceChildren(icon);
 }
 
 
