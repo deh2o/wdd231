@@ -222,7 +222,7 @@ nav a.active {
 .member-description {
     border-top: 1px solid var(--border-color);
     padding-top: 0.6rem;
-    margin-top: 0.6rem !important;
+    margin-top: 0.6rem;
 }
 
 .loading-message,
