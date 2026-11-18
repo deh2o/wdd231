@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="Welcome to the Abakaliki Chamber of Commerce. Connect with local businesses, explore community events, discover opportunities, and support economic growth in Abakaliki, Ebonyi State."
+    />
+
+    <meta name="author" content="Agha Idam Walter" />
+
+    <title>Home | Abakaliki Chamber of Commerce</title>
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:title" content="Abakaliki Chamber of Commerce | Home" />
+    <meta
+      property="og:description"
+      content="Connect with businesses, discover events, and explore opportunities in Abakaliki, Ebonyi State, Nigeria."
+    />
+    <meta
+      property="og:image"
+      content="https://deh2o.github.io/wdd231/chamber/images/social-preview.jpeg"
+    />
+    <meta
+      property="og:url"
+      content="https://deh2o.github.io/wdd231/chamber/index.html"
+    />
+    <meta property="og:type" content="website" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.jpeg" type="image/png" />
+
+    <!-- Stylesheets: normalize first -->
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/small.css" />
+    <link rel="stylesheet" href="styles/larger.css" />
+
+    <!-- JavaScript -->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <div class="header-content">
+        <a href="index.html" class="brand">
+          <span class="brand-mark" aria-hidden="true">A</span>
+          <span>
+            <strong>Abakaliki</strong>
+            <small>Chamber of Commerce</small>
+          </span>
+        </a>
+
+        <button
+          id="menu-button"
+          class="menu-button"
+          aria-label="Open navigation menu"
+          aria-expanded="false"
+          aria-controls="navigation"
+        >
+          ☰
+        </button>
+
+        <nav id="navigation" aria-label="Main navigation">
+          <a href="index.html" class="active" aria-current="page">Home</a>
+          <a href="discover.html">Discover</a>
+          <a href="directory.html">Directory</a>
+          <a href="join.html">Join</a>
+          <a href="about.html">About</a>
+          <a href="podcast.html">Podcast</a>
+          <a href="events.html">Events</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="home-main">
+      <!-- Hero Section -->
+      <section class="hero" aria-label="Welcome to Abakaliki">
+        <img
+          src="images/abakaliki-hero.png"
+          alt="View of Abakaliki city"
+          width="1200"
+          height="600"
+        />
+
+        <div class="hero-content">
+          <h1>Building a Stronger Business Community</h1>
+          <p>
+            Connecting businesses, creating opportunities, and promoting
+            economic growth in Abakaliki.
+          </p>
+          <a href="join.html" class="cta-button">Join the Chamber</a>
+        </div>
+      </section>
+
+      <!-- Events Section -->
+      <section class="events-section">
+        <h2>Upcoming Events</h2>
+
+        <div class="events-container">
+          <article class="event-card">
+            <h3>Business Networking Meetup</h3>
+            <p>Connect with business owners and professionals in Abakaliki.</p>
+            <p><strong>Date:</strong> Coming soon</p>
+          </article>
+
+          <article class="event-card">
+            <h3>Small Business Development Workshop</h3>
+            <p>Learn practical strategies to grow and improve your business.</p>
+            <p><strong>Date:</strong> Coming soon</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Weather Section -->
+      <section class="weather-section">
+        <h2>Weather</h2>
+
+        <div class="weather-current">
+          <h3>Current Weather in Abakaliki</h3>
+          <p>Temperature: <span id="current-temp">--</span></p>
+          <p>Conditions: <span id="weather-description">Loading...</span></p>
+          <img id="weather-icon" src="" alt="" />
+        </div>
+
+        <div class="forecast-section">
+          <h3>3-Day Forecast</h3>
+          <div id="forecast" class="forecast-container">
+            <p>Loading forecast...</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Business Spotlights -->
+      <section class="spotlights-section">
+        <h2>Business Spotlights</h2>
+
+        <div id="spotlights" class="spotlights-container">
+          <p>Discovering featured chamber members...</p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-contact">
+          <h2>Abakaliki Chamber of Commerce</h2>
+          <p>Abakaliki, Ebonyi State, Nigeria</p>
+          <p>
+            Email:
+            <a href="mailto:info@abakalikichamber.org"
+              >info@abakalikichamber.org</a
+            >
+          </p>
+          <p>Phone: +234 800 000 0000</p>
+        </div>
+
+        <div class="social-links">
+          <a href="#" aria-label="YouTube">YouTube</a>
+          <a href="#" aria-label="X">X</a>
+          <a href="#" aria-label="LinkedIn">LinkedIn</a>
+        </div>
+
+        <div class="footer-development">
+          <p>WDD231 Class Project</p>
+          <p>Agha Idam Walter</p>
+          <p>
+            &copy; <span id="currentyear"></span> Abakaliki Chamber of Commerce
+          </p>
+          <p id="lastModified"></p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
