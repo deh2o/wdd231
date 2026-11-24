@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="Apply for membership in the Abakaliki Chamber of Commerce."
+    />
+    <meta name="author" content="Agha Idam Walter" />
+
+    <title>Join the Chamber | Abakaliki Chamber of Commerce</title>
+
+    <meta
+      property="og:title"
+      content="Join the Abakaliki Chamber of Commerce"
+    />
+    <meta
+      property="og:description"
+      content="Explore membership benefits and apply to join the Abakaliki Chamber of Commerce."
+    />
+    <meta
+      property="og:image"
+      content="https://deh2o.github.io/wdd231/chamber/images/social-preview.jpeg"
+    />
+    <meta
+      property="og:url"
+      content="https://deh2o.github.io/wdd231/chamber/join.html"
+    />
+    <meta property="og:type" content="website" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="icon" href="images/favicon.jpeg" />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/small.css" />
+    <link rel="stylesheet" href="styles/larger.css" />
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script type="module" src="scripts/join.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <div class="header-content">
+        <a href="index.html" class="brand">
+          <span class="brand-mark" aria-hidden="true">A</span>
+          <span>
+            <strong>Abakaliki</strong>
+            <small>Chamber of Commerce</small>
+          </span>
+        </a>
+
+        <button
+          id="menu-button"
+          class="menu-button"
+          aria-label="Open navigation menu"
+          aria-expanded="false"
+          aria-controls="navigation"
+        >
+          ☰
+        </button>
+
+        <nav id="navigation" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="discover.html">Discover</a>
+          <a href="directory.html">Directory</a>
+          <a href="join.html" class="active" aria-current="page">Join</a>
+          <a href="about.html">About</a>
+          <a href="podcast.html">Podcast</a>
+          <a href="events.html">Events</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="join-main">
+      <div class="page-heading">
+        <h1>Join the Chamber</h1>
+        <p>
+          Complete the application form to apply for membership in the Abakaliki
+          Chamber of Commerce.
+        </p>
+      </div>
+
+      <div class="join-layout">
+        <form class="membership-form" method="get" action="thankyou.html">
+          <h2>Membership Application</h2>
+
+          <label for="first-name">
+            First Name
+            <input
+              type="text"
+              id="first-name"
+              name="firstName"
+              title="Enter your first name."
+              autocomplete="given-name"
+              required
+            />
+          </label>
+
+          <label for="last-name">
+            Last Name
+            <input
+              type="text"
+              id="last-name"
+              name="lastName"
+              title="Enter your last name."
+              autocomplete="family-name"
+              required
+            />
+          </label>
+
+          <label for="organization-title">
+            Organizational Title
+            <input
+              type="text"
+              id="organization-title"
+              name="organizationTitle"
+              title="Enter your organizational title using at least seven letters, spaces, or hyphens."
+              autocomplete="organization-title"
+              pattern="[A-Za-z -]{7,}"
+            />
+            <span class="field-help">
+              Use at least 7 characters. Letters, spaces, and hyphens only.
+            </span>
+          </label>
+
+          <label for="email">
+            Email Address
+            <input
+              type="email"
+              id="email"
+              name="email"
+              title="Enter your email address."
+              autocomplete="email"
+              placeholder="name@example.com"
+              required
+            />
+          </label>
+
+          <label for="phone">
+            Mobile Phone Number
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              title="Enter your mobile phone number."
+              autocomplete="tel"
+              required
+            />
+          </label>
+
+          <label for="organization">
+            Business or Organization Name
+            <input
+              type="text"
+              id="organization"
+              name="organization"
+              title="Enter your business or organization name."
+              autocomplete="organization"
+              required
+            />
+          </label>
+
+          <label for="membership">
+            Membership Level
+            <select
+              id="membership"
+              name="membership"
+              title="Choose a membership level."
+              required
+            >
+              <option value="" disabled selected>
+                Select a membership level
+              </option>
+              <option value="np">NP Membership</option>
+              <option value="bronze">Bronze Membership</option>
+              <option value="silver">Silver Membership</option>
+              <option value="gold">Gold Membership</option>
+            </select>
+          </label>
+
+          <label for="description">
+            Business or Organization Description
+            <textarea
+              id="description"
+              name="description"
+              title="Briefly describe your business or organization."
+              rows="5"
+            ></textarea>
+          </label>
+
+          <input type="hidden" id="timestamp" name="timestamp" />
+
+          <input type="submit" value="Submit Membership Application" />
+        </form>
+
+        <aside class="membership-levels" aria-labelledby="levels-heading">
+          <h2 id="levels-heading">Membership Levels</h2>
+
+          <article class="membership-card">
+            <h3>NP Membership</h3>
+            <p>For nonprofit organizations. No membership fee.</p>
+            <a href="#np-modal" class="modal-link" data-modal="np-modal">
+              View NP benefits
+            </a>
+          </article>
+
+          <article class="membership-card">
+            <h3>Bronze Membership</h3>
+            <p>Entry-level benefits for growing businesses.</p>
+            <a
+              href="#bronze-modal"
+              class="modal-link"
+              data-modal="bronze-modal"
+            >
+              View Bronze benefits
+            </a>
+          </article>
+
+          <article class="membership-card">
+            <h3>Silver Membership</h3>
+            <p>More opportunities for promotion and development.</p>
+            <a
+              href="#silver-modal"
+              class="modal-link"
+              data-modal="silver-modal"
+            >
+              View Silver benefits
+            </a>
+          </article>
+
+          <article class="membership-card">
+            <h3>Gold Membership</h3>
+            <p>Our highest level of business visibility and support.</p>
+            <a href="#gold-modal" class="modal-link" data-modal="gold-modal">
+              View Gold benefits
+            </a>
+          </article>
+        </aside>
+      </div>
+
+      <dialog id="np-modal" class="membership-modal" aria-labelledby="np-title">
+        <h2 id="np-title">NP Membership Benefits</h2>
+        <ul>
+          <li>No membership fee.</li>
+          <li>Access to chamber networking events.</li>
+          <li>Access to selected business learning resources.</li>
+        </ul>
+        <button type="button" class="modal-close">Close</button>
+      </dialog>
+
+      <dialog
+        id="bronze-modal"
+        class="membership-modal"
+        aria-labelledby="bronze-title"
+      >
+        <h2 id="bronze-title">Bronze Membership Benefits</h2>
+        <ul>
+          <li>Access to chamber networking events.</li>
+          <li>Discounts on selected training sessions.</li>
+          <li>Eligibility for selected member promotions.</li>
+        </ul>
+        <button type="button" class="modal-close">Close</button>
+      </dialog>
+
+      <dialog
+        id="silver-modal"
+        class="membership-modal"
+        aria-labelledby="silver-title"
+      >
+        <h2 id="silver-title">Silver Membership Benefits</h2>
+        <ul>
+          <li>All Bronze membership benefits.</li>
+          <li>Additional discounts on selected events and training.</li>
+          <li>Eligibility for a business spotlight feature.</li>
+        </ul>
+        <button type="button" class="modal-close">Close</button>
+      </dialog>
+
+      <dialog
+        id="gold-modal"
+        class="membership-modal"
+        aria-labelledby="gold-title"
+      >
+        <h2 id="gold-title">Gold Membership Benefits</h2>
+        <ul>
+          <li>All Silver membership benefits.</li>
+          <li>Priority consideration for chamber business spotlights.</li>
+          <li>
+            Access to selected premium networking and promotional opportunities.
+          </li>
+        </ul>
+        <button type="button" class="modal-close">Close</button>
+      </dialog>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-contact">
+          <h2>Abakaliki Chamber of Commerce</h2>
+          <p>Abakaliki, Ebonyi State, Nigeria</p>
+          <p>
+            Email:
+            <a href="mailto:info@abakalikichamber.org">
+              info@abakalikichamber.org
+            </a>
+          </p>
+          <p>Phone: +234 800 000 0000</p>
+        </div>
+
+        <div class="social-links">
+          <a href="#" aria-label="YouTube">YouTube</a>
+          <a href="#" aria-label="X">X</a>
+          <a href="#" aria-label="LinkedIn">LinkedIn</a>
+        </div>
+
+        <div class="footer-development">
+          <p>WDD231 Class Project</p>
+          <p>Agha Idam Walter</p>
+          <p>
+            &copy; <span id="currentyear"></span> Abakaliki Chamber of Commerce
+          </p>
+          <p id="lastModified"></p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

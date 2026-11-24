@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="Confirmation of your Abakaliki Chamber of Commerce membership application."
+    />
+    <meta name="author" content="Agha Idam Walter" />
+
+    <title>Application Received | Abakaliki Chamber of Commerce</title>
+
+    <link rel="icon" href="images/favicon.jpeg" />
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/small.css" />
+    <link rel="stylesheet" href="styles/larger.css" />
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script type="module" src="scripts/thankyou.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <div class="header-content">
+        <a href="index.html" class="brand">
+          <span class="brand-mark" aria-hidden="true">A</span>
+          <span>
+            <strong>Abakaliki</strong>
+            <small>Chamber of Commerce</small>
+          </span>
+        </a>
+
+        <button
+          id="menu-button"
+          class="menu-button"
+          aria-label="Open navigation menu"
+          aria-expanded="false"
+          aria-controls="navigation"
+        >
+          ☰
+        </button>
+
+        <nav id="navigation" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="discover.html">Discover</a>
+          <a href="directory.html">Directory</a>
+          <a href="join.html">Join</a>
+          <a href="about.html">About</a>
+          <a href="podcast.html">Podcast</a>
+          <a href="events.html">Events</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="thankyou-main">
+      <section class="thankyou-panel" aria-labelledby="thankyou-heading">
+        <h1 id="thankyou-heading">Thank You for Applying!</h1>
+        <p>
+          Your membership application has been submitted. Here is the
+          information you provided.
+        </p>
+
+        <dl class="application-summary">
+          <div>
+            <dt>First Name</dt>
+            <dd id="summary-first-name">Not provided</dd>
+          </div>
+          <div>
+            <dt>Last Name</dt>
+            <dd id="summary-last-name">Not provided</dd>
+          </div>
+          <div>
+            <dt>Email Address</dt>
+            <dd id="summary-email">Not provided</dd>
+          </div>
+          <div>
+            <dt>Mobile Phone</dt>
+            <dd id="summary-phone">Not provided</dd>
+          </div>
+          <div>
+            <dt>Business or Organization</dt>
+            <dd id="summary-organization">Not provided</dd>
+          </div>
+          <div>
+            <dt>Application Date and Time</dt>
+            <dd id="summary-timestamp">Not provided</dd>
+          </div>
+        </dl>
+
+        <a class="thankyou-home-link" href="index.html">Return to Home</a>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-contact">
+          <h2>Abakaliki Chamber of Commerce</h2>
+          <p>Abakaliki, Ebonyi State, Nigeria</p>
+          <p>
+            Email:
+            <a href="mailto:info@abakalikichamber.org">
+              info@abakalikichamber.org
+            </a>
+          </p>
+          <p>Phone: +234 800 000 0000</p>
+        </div>
+
+        <div class="social-links">
+          <a href="#" aria-label="YouTube">YouTube</a>
+          <a href="#" aria-label="X">X</a>
+          <a href="#" aria-label="LinkedIn">LinkedIn</a>
+        </div>
+
+        <div class="footer-development">
+          <p>WDD231 Class Project</p>
+          <p>Agha Idam Walter</p>
+          <p>
+            &copy; <span id="currentyear"></span> Abakaliki Chamber of Commerce
+          </p>
+          <p id="lastModified"></p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
