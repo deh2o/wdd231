@@ -547,7 +547,7 @@ button:focus-visible {
   border: 1px solid var(--border-color);
   border-radius: 8px;
   padding: 1.25rem;
-  box-shadow: 0 2px 6px rgb(32 43 54 / 10%);
+  box-shadow: 0 2px 6px var(--text-color);
 }
 
 .membership-form h2,
@@ -624,7 +624,7 @@ button:focus-visible {
   border: 1px solid var(--border-color);
   border-top: 4px solid var(--secondary-color);
   border-radius: 8px;
-  box-shadow: 0 2px 6px rgb(32 43 54 / 10%);
+  box-shadow: 0 2px 6px var(--primary-color);
   animation: membership-card-enter 700ms ease both;
 }
 
@@ -661,7 +661,7 @@ button:focus-visible {
 }
 
 .membership-modal::backdrop {
-  background: rgb(0 0 0 / 55%);
+  background: var(--text-color);
 }
 
 .membership-modal h2 {
