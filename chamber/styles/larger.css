@@ -182,3 +182,47 @@
   }
 }
 
+
+/* Discover page: medium screens */
+@media screen and (min-width: 641px) and (max-width: 1024px) {
+  .discover-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-areas:
+      "place1 place1"
+      "place2 place3"
+      "place4 place4"
+      "place5 place6"
+      "place7 place8";
+    gap: 1.5rem;
+  }
+
+  .discover-card img {
+    transition: filter 0.25s ease, transform 0.25s ease;
+  }
+
+  .discover-card img:hover {
+    filter: saturate(1.2);
+    transform: scale(1.02);
+  }
+}
+
+/* Discover page: large screens */
+@media screen and (min-width: 1025px) {
+  .discover-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-areas:
+      "place1 place1 place2 place3"
+      "place4 place5 place5 place6"
+      "place7 place7 place8 place8";
+    gap: 1.5rem;
+  }
+
+  .discover-card img {
+    transition: filter 0.25s ease, transform 0.25s ease;
+  }
+
+  .discover-card img:hover {
+    filter: saturate(1.2);
+    transform: scale(1.02);
+  }
+}

@@ -731,3 +731,125 @@ button:focus-visible {
     animation: none;
   }
 }
+
+
+/* Discover page */
+.discover-main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.5rem 1rem 2.5rem;
+}
+
+.discover-main > h1 {
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+.discover-intro {
+  max-width: 750px;
+  margin-bottom: 1.5rem;
+}
+
+.visit-message {
+  margin: 1rem 0 1.5rem;
+  padding: 1rem;
+  background: var(--extra-color);
+  border-left: 5px solid var(--secondary-color);
+  border-radius: 4px;
+  font-weight: 700;
+}
+
+.discover-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "place1"
+    "place2"
+    "place3"
+    "place4"
+    "place5"
+    "place6"
+    "place7"
+    "place8";
+  gap: 1.25rem;
+}
+
+.place-1 { grid-area: place1; }
+.place-2 { grid-area: place2; }
+.place-3 { grid-area: place3; }
+.place-4 { grid-area: place4; }
+.place-5 { grid-area: place5; }
+.place-6 { grid-area: place6; }
+.place-7 { grid-area: place7; }
+.place-8 { grid-area: place8; }
+
+.discover-card {
+  min-width: 0;
+  padding: 1rem;
+  background: var(--white);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgb(32 43 54 / 10%);
+}
+
+.discover-card h2 {
+  margin-top: 0;
+  color: var(--primary-color);
+  font-size: 1.25rem;
+}
+
+.discover-card figure {
+  margin: 0 0 1rem;
+}
+
+.discover-card img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.discover-card address {
+  margin-bottom: 0.75rem;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.discover-card p {
+  margin: 0 0 1rem;
+}
+
+.discover-card .discover-more {
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--border-color);
+}
+
+.discover-card .learn-more {
+  padding: 0.6rem 1rem;
+  border: 0;
+  border-radius: 4px;
+  background: var(--primary-color);
+  color: var(--white);
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.discover-card .learn-more:hover,
+.discover-card .learn-more:focus-visible {
+  background: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+.discover-card .learn-more:focus-visible {
+  outline: 3px solid var(--extra-color-2);
+  outline-offset: 3px;
+}
+
+/* No image hover effect on mobile */
+@media (hover: none), (max-width: 640px) {
+  .discover-card img {
+    transition: none;
+  }
+}
