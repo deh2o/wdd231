@@ -1,0 +1,391 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Website plan for the Oilfield Digital and Safety Hub, an educational resource for digital skills and safety in the oil and gas industry."
+    />
+    <meta name="author" content="Agha Idam Walter" />
+
+    <title>Website Plan | Oilfield Digital &amp; Safety Hub</title>
+
+    <style>
+      :root {
+        --navy: #18364a;
+        --safety-orange: #d97706;
+        --page-background: #f4f6f8;
+        --text-color: #202b36;
+        --white: #ffffff;
+        --border-color: #c8d0d8;
+        --wireframe-fill: #eeeeee;
+        --wireframe-line: #222222;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        background: var(--page-background);
+        color: var(--text-color);
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+      }
+
+      h1,
+      h2,
+      h3 {
+        font-family: Georgia, serif;
+      }
+
+      header,
+      footer {
+        padding: 1.5rem;
+        background: var(--navy);
+        color: var(--white);
+      }
+
+      header {
+        border-bottom: 6px solid var(--safety-orange);
+      }
+
+      header h1 {
+        margin: 0;
+        font-size: clamp(1.6rem, 4vw, 2.4rem);
+      }
+
+      header p {
+        margin-bottom: 0;
+      }
+
+      main {
+        width: min(100% - 2rem, 1000px);
+        margin: 2rem auto;
+      }
+
+      section {
+        margin-bottom: 1.5rem;
+        padding: 1.5rem;
+        background: var(--white);
+        border: 1px solid var(--border-color);
+        border-radius: 8px;
+      }
+
+      h2 {
+        margin-top: 0;
+        color: var(--navy);
+        border-bottom: 3px solid var(--safety-orange);
+        padding-bottom: 0.4rem;
+      }
+
+      h3 {
+        color: var(--navy);
+      }
+
+      .color-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+        gap: 1rem;
+      }
+
+      .color-item {
+        padding: 1rem;
+        border: 1px solid var(--border-color);
+        border-radius: 6px;
+      }
+
+      .color-swatch {
+        display: block;
+        height: 48px;
+        margin-bottom: 0.5rem;
+        border: 1px solid #777777;
+      }
+
+      .navy-swatch {
+        background: var(--navy);
+      }
+
+      .orange-swatch {
+        background: var(--safety-orange);
+      }
+
+      .background-swatch {
+        background: var(--page-background);
+      }
+
+      .text-swatch {
+        background: var(--text-color);
+      }
+
+      .wireframes {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+
+      .wireframe {
+        padding: 1rem;
+        background: #ffffff;
+        border: 1px solid #222222;
+        color: #111111;
+      }
+
+      .wireframe h3 {
+        color: #111111;
+      }
+
+      .wireframe-screen {
+        padding: 0.5rem;
+        border: 2px solid var(--wireframe-line);
+        background: #ffffff;
+      }
+
+      .wf-box {
+        display: grid;
+        place-items: center;
+        min-height: 42px;
+        margin: 0.4rem 0;
+        padding: 0.5rem;
+        border: 1px solid var(--wireframe-line);
+        background: var(--wireframe-fill);
+        color: #111111;
+        text-align: center;
+        font-size: 0.85rem;
+      }
+
+      .wf-nav {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.25rem;
+      }
+
+      .wf-columns {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 0.4rem;
+      }
+
+      .wf-card-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 0.4rem;
+      }
+
+      .wireframe-caption {
+        margin-bottom: 0;
+        font-size: 0.9rem;
+      }
+
+      footer {
+        text-align: center;
+      }
+
+      @media screen and (min-width: 700px) {
+        .wireframes {
+          grid-template-columns: 1fr 1fr;
+          align-items: start;
+        }
+
+        .wf-columns {
+          grid-template-columns: 2fr 1fr;
+        }
+
+        .wf-card-grid {
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>Oilfield Digital &amp; Safety Hub</h1>
+      <p>Individual Website Project Plan</p>
+    </header>
+
+    <main>
+      <section>
+        <h2>1. Site Name</h2>
+        <p><strong>Oilfield Digital &amp; Safety Hub</strong></p>
+        <p>
+          This name describes a central online resource for people who want to
+          learn about digital skills and workplace safety in the oil and gas
+          industry. “Hub” communicates that visitors can find related learning
+          resources in one place.
+        </p>
+        <p><strong>Optional domain:</strong> oilfieldskillsafety.org</p>
+      </section>
+
+      <section>
+        <h2>2. Site Purpose</h2>
+        <p>
+          The Oilfield Digital &amp; Safety Hub will provide beginner-friendly
+          information about digital skills, technology careers, and basic
+          workplace safety practices relevant to the oil and gas industry.
+          Visitors will be able to explore learning resources, review
+          information about digital career pathways, and submit questions or
+          suggest topics through a contact form.
+        </p>
+        <p>
+          The website will be an educational resource. It will not replace
+          formal safety training, professional advice, or an employer's safety
+          procedures.
+        </p>
+      </section>
+
+      <section>
+        <h2>3. Scenarios</h2>
+        <ul>
+          <li>
+            What digital and data skills could help me prepare for a technology
+            career in the oil and gas industry?
+          </li>
+          <li>
+            Where can I find beginner-friendly learning resources about
+            workplace safety in oil and gas?
+          </li>
+          <li>
+            How can I save a learning resource so I can return to it later?
+          </li>
+          <li>
+            How can I suggest a topic or ask a question about the information on
+            this website?
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>4. Color Scheme</h2>
+        <p>
+          The site will use a restrained industrial-inspired palette. Navy will
+          establish a professional identity, orange will draw attention to
+          important actions, and light backgrounds will keep content easy to
+          read.
+        </p>
+
+        <div class="color-list">
+          <div class="color-item">
+            <span class="color-swatch navy-swatch" aria-hidden="true"></span>
+            <strong>Industrial Navy — #18364A</strong>
+            <p>Used for the header, footer, headings, and primary buttons.</p>
+          </div>
+
+          <div class="color-item">
+            <span class="color-swatch orange-swatch" aria-hidden="true"></span>
+            <strong>Safety Orange — #D97706</strong>
+            <p>Used for accents, section borders, and important highlights.</p>
+          </div>
+
+          <div class="color-item">
+            <span
+              class="color-swatch background-swatch"
+              aria-hidden="true"
+            ></span>
+            <strong>Light Gray — #F4F6F8</strong>
+            <p>Used as the main page background to create visual space.</p>
+          </div>
+
+          <div class="color-item">
+            <span class="color-swatch text-swatch" aria-hidden="true"></span>
+            <strong>Charcoal — #202B36</strong>
+            <p>
+              Used for body text to provide strong contrast on light surfaces.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>5. Typography</h2>
+        <p>
+          The website will use two font families to keep the design consistent
+          and readable.
+        </p>
+        <ul>
+          <li>
+            <strong>Arial:</strong> Used for body text, navigation, forms, and
+            general interface content because it is familiar and readable.
+          </li>
+          <li>
+            <strong>Georgia:</strong> Used for major headings to give the
+            website a clear visual hierarchy and a more editorial feel.
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>6. Wireframes</h2>
+        <p>
+          These black-and-white wireframes show the planned structure of the
+          home page at small and large viewport sizes. They focus on layout and
+          content placement rather than final colors, images, or styling.
+        </p>
+
+        <div class="wireframes">
+          <div class="wireframe">
+            <h3>Small Viewport</h3>
+            <div class="wireframe-screen">
+              <div class="wf-box">Site Name / Logo</div>
+              <div class="wf-box">Menu Button</div>
+              <div class="wf-box">Hero Image</div>
+              <div class="wf-box">Welcome Heading and Intro</div>
+              <div class="wf-box">Explore Learning Resources Button</div>
+              <div class="wf-box">Digital Skills Section</div>
+              <div class="wf-card-grid">
+                <div class="wf-box">Resource Card 1</div>
+                <div class="wf-box">Resource Card 2</div>
+                <div class="wf-box">Resource Card 3</div>
+              </div>
+              <div class="wf-box">Safety Learning Section</div>
+              <div class="wf-box">Contact / Suggest a Topic Form</div>
+              <div class="wf-box">Footer / Attributions</div>
+            </div>
+            <p class="wireframe-caption">
+              Mobile layout: content stacks vertically, with a menu button and
+              full-width sections.
+            </p>
+          </div>
+
+          <div class="wireframe">
+            <h3>Large Viewport</h3>
+            <div class="wireframe-screen">
+              <div class="wf-box">Site Name / Logo</div>
+              <div class="wf-nav">
+                <div class="wf-box">Home</div>
+                <div class="wf-box">Digital Skills</div>
+                <div class="wf-box">Safety</div>
+              </div>
+              <div class="wf-columns">
+                <div class="wf-box">Hero Image and Welcome Content</div>
+                <div class="wf-box">Featured Learning Resource</div>
+              </div>
+              <div class="wf-box">Digital Skills Section</div>
+              <div class="wf-card-grid">
+                <div class="wf-box">Resource Card 1</div>
+                <div class="wf-box">Resource Card 2</div>
+                <div class="wf-box">Resource Card 3</div>
+              </div>
+              <div class="wf-columns">
+                <div class="wf-box">Safety Learning Section</div>
+                <div class="wf-box">Contact / Suggest a Topic Form</div>
+              </div>
+              <div class="wf-box">Footer / Attributions</div>
+            </div>
+            <p class="wireframe-caption">
+              Desktop layout: navigation is horizontal and selected sections use
+              columns to make efficient use of space.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Oilfield Digital &amp; Safety Hub — Website Plan</p>
+      <p>Agha Idam Walter | WDD231</p>
+    </footer>
+  </body>
+</html>
